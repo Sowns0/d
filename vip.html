@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Luxury Shop — One File, 3 Pages</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="vip.css">
+  <script src="vip.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Luxury Shop">
+        <span class="logo" aria-hidden="true"></span>
+        <h1 class="site-title">Luxury Shop</h1>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home" data-route="home" class="nav-link">Trang Chủ</a></li>
+          <li><a href="#products" data-route="products" class="nav-link">Sản Phẩm</a></li>
+          <li><a href="#about" data-route="about" class="nav-link">Giới Thiệu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+
+      
+      <article id="home" class="section" data-page="home" tabindex="-1">
+        <section class="hero">
+          <div class="container hero-inner">
+            <div class="hero-left">
+              <h2>Khẳng định đẳng cấp — Sống khác biệt</h2>
+              <p class="content">Luxury Shop tuyển chọn tinh hoa của thế giới xa xỉ: đồng hồ Thụy Sĩ, túi da thủ công, trang sức quý và những vật phẩm phong cách sống dành cho người sành sỏi. Mỗi món đồ là một câu chuyện, một thủ pháp chế tác, và là tuyên ngôn về phong cách.</p>
+              <h2>Nơi KHông Dành Cho Người Nghèo</h2>
+              <div class="cta">
+                <a class="btn" href="#products" data-route="products">Khám phá bộ sưu tập</a>
+                <a class="btn" href="#about" data-route="about" style="background:transparent;color:var(--gold);border:1px solid rgba(255,215,0,0.12)">Về chúng tôi</a>
+              </div>
+            </div>
+
+            <div style="min-width:320px;max-width:420px;margin-top:14px">
+              <div class="contact-box" aria-label="Contact">
+                <strong style="color:var(--gold);font-family:'Playfair Display', serif">Liên hệ nhanh</strong>
+                <p style="font-size:13px;color:var(--muted);margin:8px 0 12px">Gửi yêu cầu hoặc đặt lịch tư vấn cá nhân hóa.</p>
+                <label for="cname">Họ & Tên</label>
+                <input id="cname" type="text" placeholder="Nguyễn Văn A">
+                <label for="cemail">Email</label>
+                <input id="cemail" type="email" placeholder="email@domain.com">
+                <label for="cmsg">Tin nhắn</label>
+                <textarea id="cmsg" placeholder="Cho chúng tôi biết nhu cầu của bạn"></textarea>
+                <div class="contact-actions">
+                  <button class="btn" id="quickSend">Gửi</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- ===== PRODUCTS ===== -->
+      <article id="products" class="section" data-page="products" tabindex="-1" hidden>
+        <h2 class="section-title">Bộ Sưu Tập Sang Trọng</h2>
+
+        <div class="grid" role="list" aria-label="Sản phẩm">
+          <div class="product" role="listitem">
+            <div class="imgwrap"><img src="https://mediaelly.sgp1.digitaloceanspaces.com/uploads/2021/03/31225451/tong-quan-thuong-hieu-tui-xach-gucci.12.jpg" alt="Túi xách cao cấp"></div>
+            <div class="product-body">
+              <h3>Túi xách cao cấp</h3>
+              <p>Da thật nhập khẩu, chế tác thủ công, thiết kế độc quyền.</p>
+              <div class="price">₫1.500.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://thegioiso247.vn/wp-content/uploads/2023/06/z4159530161456_801bf60c14de9cae800c890739911223.jpg" alt="Đồng hồ Thụy Sĩ"></div>
+            <div class="product-body">
+              <h3>Đồng hồ Thụy Sĩ</h3>
+              <p>Chế tác chuẩn mực; tinh tế đến từng chi tiết.</p>
+              <div class="price">₫9.900.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://giayhuyhoang.vn/wp-content/uploads/2024/01/ban-giay-da-nam-cao-cap-thu-cong-oxford-o2547-005.jpg" alt="Giày Ý"></div>
+            <div class="product-body">
+              <h3>Giày Ý sang trọng</h3>
+              <p>Hoàn thiện thủ công, form ôm vừa vặn, sang trọng.</p>
+              <div class="price">₫800.200.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://drlacir.vn/wp-content/uploads/2021/01/nuoc-hoa-nu-cao-cap-2.jpg" alt="Nước hoa quý hiếm"></div>
+            <div class="product-body">
+              <h3>Nước hoa quý hiếm</h3>
+              <p>Hương độc bản, lưu hương lâu, ghi dấu ấn riêng.</p>
+              <div class="price">₫2.300.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://www.lamoredesign.com/cdn/shop/products/ovalchampagnediamondringrosegoldhaloengagementringlamoredesignjewelry-9.jpg?v=1651861134&width=2800"></div>
+            <div class="product-body">
+              <h3>Nhẫn kim cương</h3>
+              <p>Độ tinh khiết cao, mài giũa hoàn hảo.</p>
+              <div class="price">₫12.000.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://down-vn.img.susercontent.com/file/cn-11134207-7r98o-lq05uv9wm0qd4e" alt="Vòng cổ ngọc trai"></div>
+            <div class="product-body">
+              <h3>Vòng cổ ngọc trai</h3>
+              <p>Biểu tượng của sự tinh tế và quý phái.</p>
+              <div class="price">₫1.800.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://lili.vn/wp-content/uploads/2021/12/Bong-tai-bac-nu-hinh-that-no-dinh-da-CZ-LILI_698154_1.jpg" alt="Nhẫn kim cương"></div>
+            <div class="product-body">
+              <h3>Khuyên tai kim cương</h3>
+              <p>Thiết kế tao nhã, giới hạn số lượng.</p>
+              <div class="price">4.560.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://down-vn.img.susercontent.com/file/d4145c72cb4610ae861f21aaf8ab55df" alt="Kính râm thương hiệu"></div>
+            <div class="product-body">
+              <h3>Kính râm thương hiệu</h3>
+              <p>Phong cách và bảo vệ mắt tối ưu.</p>
+              <div class="price">₫45.200.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://product.hstatic.net/200000661969/product/valy-cao-cap-nhat-samsonite-carbon-2-luxury-mau-do-n7jc4_5e6dd70ece154e599d9d1482d0dc63e5.jpg" alt="Vali du lịch"></div>
+            <div class="product-body">
+              <h3>Vali du lịch</h3>
+              <p>Chịu lực, thiết kế sang trọng cho hành trình xa xỉ.</p>
+              <div class="price">₫690.300.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://juanstailor.com.vn/uploaded/news/quy-trinh-cat-may-vest-nam-italia-tai-juan-stailor.jpg" alt="Áo vest Ý"></div>
+            <div class="product-body">
+              <h3>Áo vest Ý</h3>
+              <p>Form chuẩn, vải cao cấp nhập khẩu.</p>
+              <div class="price">₫786.800.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://www.zstyle.vn/hoanghung/29/images/V%C3%AD%20da%20c%C3%A1%20s%E1%BA%A5u%20nam.png" alt="Ví da nam"></div>
+            <div class="product-body">
+              <h3>Ví da nam</h3>
+              <p>Thiết kế tối giản, chất liệu bền bỉ.</p>
+              <div class="price">₫180.500.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://lury.net.vn/uploads/diem-danh-mau-vi-nu-cam-tay-hang-hieu-moi-nhat-2017-2.jpg" alt="Ví da nữ"></div>
+            <div class="product-body">
+              <h3>Ví da nữ</h3>
+              <p>Quý phái, sang trọng và đầy quyến rũ.</p>
+              <div class="price">₫3.300.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://www.zstyle.vn/hoanghung/30/images/top-6-thuong-hieu-giay-cao-got-xa-xi-nhat-the-gioi5.jpg" alt="Giày cao gót"></div>
+            <div class="product-body">
+              <h3>Giày cao gót</h3>
+              <p>Thanh lịch, tôn dáng cho những dịp đặc biệt.</p>
+              <div class="price">₫420.900.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://lh3.googleusercontent.com/proxy/ZXGhpDL4QLKbZCuFccYPy82dEcofieQ2gHU7P4vvD1Ol-I9d-hI84oRFsAuvfO76VIddJrS6XSa1bbTn--Zk14HIgUEm45TkycpkdQxreADw2aQuHB9k8eOoYlG9d3m6brN0xPcHimtqX5cPd2qEgPA5uGFNabL5cmVKwA" alt="Trang sức vàng"></div>
+            <div class="product-body">
+              <h3>Trang sức vàng</h3>
+              <p>Thiết kế tinh xảo, vật phẩm lưu giữ giá trị.</p>
+              <div class="price">₫2.200.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://ktck.1cdn.vn/2025/10/03/iphone-17-pro-max-galaxy-s25-ultra-camera.png" alt="Điện thoại hạng sang"></div>
+            <div class="product-body">
+              <h3>Điện thoại hạng sang</h3>
+              <p>Thiết kế độc đáo, hiệu năng cao cấp.</p>
+              <div class="price">35.000.000-70.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+          <div class="product">
+            <div class="imgwrap"><img src="https://product.hstatic.net/1000230670/product/o1cn01ppqxdp1xegyknjr9h___66052949_01f3ac434640463fb2c38bd7090709b1_large.jpg" alt="Nón thời trang"></div>
+            <div class="product-body">
+              <h3>Nón thời trang</h3>
+              <p>Hoàn thiện tinh tế, phù hợp phong cách hiện đại.</p>
+              <div class="price">₫850.000.000</div>
+              <div class="actions"><a class="btn" href="#!" data-action="quickview">Xem</a></div>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- thong tin -->
+
+      <article id="about" class="section" data-page="about" tabindex="-1" hidden>
+        <h2 class="section-title">Về Luxury Shop</h2>
+        <div class="about">
+          <div class="about-media"><img src="https://vietartdecor.vn/wp-content/uploads/2025/08/VAD_CHTT_7-1.png" alt="Showroom Luxury"></div>
+          <div class="about-text">
+            <h3>Biểu tượng của tinh hoa & phong cách sống</h3>
+            <p class="content">
+              Luxury Shop ra đời từ khát vọng mang đến cho giới thượng lưu một không gian mua sắm trực tuyến
+              thực sự khác biệt — nơi chất lượng vượt trội, tính xác thực và trải nghiệm khách hàng được đặt lên hàng đầu.
+              Chúng tôi lựa chọn từng nhà cung cấp, kiểm định từng sản phẩm, và thiết kế trải nghiệm mua sắm để tôn vinh
+              cá tính độc lập của mỗi khách hàng.
+            </p>
+
+            <p class="content">
+              Sứ mệnh của chúng tôi là kết nối những tinh hoa thủ công và công nghệ chế tác cao cấp với những người biết
+              trân trọng giá trị thật sự. Luxury Shop cam kết minh bạch xuất xứ, bảo hành, và dịch vụ hậu mãi chu đáo —
+              để mỗi giao dịch không chỉ là sở hữu, mà còn là kỷ niệm và di sản.
+            </p>
+
+            <p class="content" style="margin-top:12px">
+              <strong style="color:var(--gold)">Địa chỉ trải nghiệm:</strong> ở tận gốc mít đi tít vào trong<br> <strong style="color:var(--gold)">Hotline:</strong> 6677 3508
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div style="opacity:.9">
+        &copy; 2025 Luxury Shop. All Rights Reserved by
+        (<a href="https://www.facebook.com/TP.BaKa" style="color: gold;">Gió</a>).
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
